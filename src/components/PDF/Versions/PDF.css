@@ -1,0 +1,64 @@
+.PDF {
+  width: auto;
+  margin: 15px 15px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  border: 2px solid ;
+  justify-content: center;
+  align-items: center;
+}
+
+.PDF_main {
+  font-size: medium;
+  width: 850px;
+  padding: 2rem;
+}
+
+.edit-button {
+  width: fit-content;
+  padding: 1rem;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.edit_input {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.e_input{
+  outline: none;
+  border: 1px solid #313030;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.edit {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-content: center;
+  margin:1rem;
+}
+
+.edit-button:hover {
+  transition: transform 0.3s ease;
+  transform: scale(0.95);
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #pdfContainer, #pdfContainer * {
+    visibility: visible;
+  }
+}
+
+.print{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+  border: 1px solid red;
+}
